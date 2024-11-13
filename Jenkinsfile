@@ -9,7 +9,7 @@ pipeline {
 		stage('Deploy') {
 			steps {
         // wget o curl
-				bat C:\\Users\\E19766\\.m2\\repository\\bootcamp\\jenkins\\' + env.VERSION + '\\war-example-' + env.VERSION + '.war D:\\devenv\\CURSOJENKINS\\ambientes\\tomcat1\\apache-tomcat-9.0.96\\webapps\\ROOT.war'
+				bat 'copy C:\\Users\\E19766\\.m2\\repository\\bootcamp\\jenkins\\' + env.VERSION + '\\war-example-' + env.VERSION + '.war D:\\devenv\\CURSOJENKINS\\ambientes\\tomcat1\\apache-tomcat-9.0.96\\webapps\\ROOT.war'
 			}
 		}
 	}
